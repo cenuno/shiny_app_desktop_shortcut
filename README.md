@@ -4,9 +4,11 @@ Packaging your [Shiny App](https://shiny.rstudio.com/) as a [Desktop Shortcut](h
 
 ## Launching the Shiny App
 
-Double-click on the file `launch_shiny_app.command`. This type of file is an executable file that does two things:
+Double-click on the file [`launch_shiny_app.command`](launch_shiny_app.command). The file contains [bash](https://www.gnu.org/software/bash/) commands; however, the `.command` file extension enables this file to be executable. This means the user just has to click on the file and not worry about the code behind it! This is a generalized version of how software applications like Microsoft Word and Spotify work! 
 
-1. It runs the `r/save_leaflet.r` file; and
+The `launch_shiny_app.command` file does two things under the hood:
+
+1. It runs the [`r/save_leaflet.r`](r/save_leaflet.R) file; and
 2. It opens the default browser so the user can see the Shiny app.
 
 ## Notes
@@ -19,7 +21,7 @@ When you open `launch_shiny_app.command`, it might not execute because the file 
 chmod u+x launch_shiny_app.command
 ```
 ### Credit
-This repo was heavily influenced by Kevin Rosamont's Dec. 2017 blog [*Launching your shiny app in 2 clicks*](http://blog.rdata.lu/post/2017-12-26-launching-your-shiny-app-in-2-clicks/). The Shiny app [used in this example](r/save_leaflet.r) was made from a [Stack Overflow](https://stackoverflow.com/a/49332143/7954106) post.
+This repo was heavily influenced by Kevin Rosamont's Dec. 2017 blog [*Launching your shiny app in 2 clicks*](http://blog.rdata.lu/post/2017-12-26-launching-your-shiny-app-in-2-clicks/). The Shiny app [used in this example](r/save_leaflet.R) was made from a [Stack Overflow](https://stackoverflow.com/a/49332143/7954106) post.
 
 ## Session Information
 
