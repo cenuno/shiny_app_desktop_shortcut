@@ -2,8 +2,23 @@
 
 Packaging your [Shiny App](https://shiny.rstudio.com/) as a [Desktop Shortcut](https://www.pcmag.com/encyclopedia/term/51285/shortcut) will help non-technical stakeholders interact with your code. By allowing them to simply double-click on an icon, you're showing your work without needing them to see your code.
 
-## Note
+## Launching the Shiny App
 
+Double-click on the file `launch_shiny_app.command`. This type of file is an executable file that does two things:
+
+1. It runs the `r/save_leaflet.r` file; and
+2. It opens the default browser so the user can see the Shiny app.
+
+## Notes
+
+### File Permission
+
+When you open `launch_shiny_app.command`, it might not execute because the file did not maintain the appropriate access privilege. [To change permissions so the file does execute](https://askubuntu.com/a/29593/959090), run the following in the [Terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac):
+
+```bash
+chmod u+x launch_shiny_app.command
+```
+### Credit
 This repo was heavily influenced by Kevin Rosamont's Dec. 2017 blog [*Launching your shiny app in 2 clicks*](http://blog.rdata.lu/post/2017-12-26-launching-your-shiny-app-in-2-clicks/). The Shiny app [used in this example](r/save_leaflet.r) was made from a [Stack Overflow](https://stackoverflow.com/a/49332143/7954106) post.
 
 ## Session Information
