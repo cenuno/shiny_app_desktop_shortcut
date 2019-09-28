@@ -4,6 +4,28 @@ Packaging your [Shiny App](https://shiny.rstudio.com/) as a [Desktop Shortcut](h
 
 ## Launching the Shiny App
 
+### Download a local copy of the repository
+
+Open the Terminal and ensure you're at your root directory (i.e. `cd ~/`). Click on the `Clone or download` and run `git clone git@github.com:cenuno/shiny_app_desktop_shortcut.git` to download a local copy of the repository. The repository should be located at `~/shiny_app_desktop_shortcut/`.
+
+### Change File Icon 
+
+Run the following to change the file icon of the `launch_shiny_app.command` file to be user friendly:
+
+```bash
+sh ~/shiny_app_desktop_shortcut/change_file_icon.sh
+```
+
+### Copy the `launch_shiny_app.command` file to the Desktop
+
+The following command will enable the user to find the file on the Desktop.
+
+```bash
+cp ~/shiny_app_desktop_shortcut/launch_shiny_app.command ~/Desktop
+```
+
+### Open the Shiny App
+
 Double-click on the file [`launch_shiny_app.command`](launch_shiny_app.command). The file contains [bash](https://www.gnu.org/software/bash/) commands; however, the `.command` file extension enables this file to be executable. This means the user just has to click on the file and not worry about the code behind it! This is a generalized version of how software applications like Microsoft Word and Spotify work! 
 
 The `launch_shiny_app.command` file does two things under the hood:
