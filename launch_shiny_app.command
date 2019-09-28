@@ -13,7 +13,7 @@ runWithDelay () {
 }
 
 # launch shiny app ----
-# note: for this to launch, you need to specify an absolute path
-# TODO: find way to launch with relative path
+# note: requires the working directory to be
+#       ~/shiny_app_desktop_shortcut/
 runWithDelay 3 open http://127.0.0.1:7990 &
 Rscript r/save_leaflet.r
