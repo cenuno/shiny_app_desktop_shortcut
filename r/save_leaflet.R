@@ -157,6 +157,6 @@ server <- function(input, output, session) {
 # note: the port is a communication endpoint 
 #       (nothing special about 7990, just followed this blog:
 #       http://blog.rdata.lu/post/2017-12-26-launching-your-shiny-app-in-2-clicks/)
-shinyApp(ui, server, options = list("port" = 7990))
+shinyApp(ui, server)#, options = list("port" = 7990))
 
 # end of script #

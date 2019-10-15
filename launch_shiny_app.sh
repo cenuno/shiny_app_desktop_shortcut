@@ -1,9 +1,7 @@
 #!/bin/bash
 
 # create relative path to shiny file ----
-# note: this requires the directory to be cloned in the user's
-#       home directory (~)
-SHINY_APP_PATH=~/shiny_app_desktop_shortcut/r/save_leaflet.r
+SHINY_APP_PATH=r/save_leaflet.r
 
 # run commands with delay ----
 runWithDelay () {
