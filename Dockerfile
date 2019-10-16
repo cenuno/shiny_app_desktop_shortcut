@@ -25,7 +25,7 @@ RUN Rscript -e "options(repos = \
 COPY shiny-server.conf  /etc/shiny-server/shiny-server.conf
 
 # Copy local copy of Shiny app to the Docker image
-COPY r/save_leaflet.R /srv/shiny-server/
+COPY /r/save_leaflet.R /srv/shiny-server/
 
 # Make the ShinyApp available at port 80
 EXPOSE 80
